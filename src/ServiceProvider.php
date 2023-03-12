@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace PreemStudio\ArbitraryAttributes;
 
-use Spatie\LaravelPackageTools\Package;
-use Spatie\LaravelPackageTools\PackageServiceProvider;
+use PreemStudio\Jetpack\Package\AbstractServiceProvider;
+use PreemStudio\Jetpack\Package\Package;
 
-class ServiceProvider extends PackageServiceProvider
+class ServiceProvider extends AbstractServiceProvider
 {
     public function configurePackage(Package $package): void
     {
