@@ -7,7 +7,7 @@ namespace Tests;
 use Illuminate\Database\Eloquent\Model;
 use PreemStudio\ArbitraryAttributes\Concerns\HasArbitraryAttributes;
 
-class User extends Model
+final class User extends Model
 {
     use HasArbitraryAttributes;
 

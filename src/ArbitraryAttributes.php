@@ -9,7 +9,7 @@ use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
 use PreemStudio\ArbitraryAttributes\Models\ArbitraryAttribute;
 
-class ArbitraryAttributes
+final class ArbitraryAttributes
 {
     private Collection $collection;
 
