@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Tests;
+namespace Tests\Unit;
 
-use Tests\User;
+use Tests\Fixtures\User;
 
 beforeEach(function (): void {
     $this->user       = User::create([]);

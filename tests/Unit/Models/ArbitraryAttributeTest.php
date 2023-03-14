@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Tests\Models;
+namespace Tests\Unit\Models;
 
-use Tests\User;
+use Tests\Fixtures\User;
 
 it('should belong to a model', function (): void {
     $user = User::create([]);

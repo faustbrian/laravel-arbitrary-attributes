@@ -4,17 +4,12 @@ declare(strict_types=1);
 
 namespace Tests;
 
-use Orchestra\Testbench\TestCase as Orchestra;
-use PreemStudio\ArbitraryAttributes\ServiceProvider;
-use Spatie\LaravelData\LaravelDataServiceProvider;
+use PreemStudio\Jetpack\TestBench\AbstractPackageTestCase;
 
-abstract class TestCase extends Orchestra
+abstract class TestCase extends AbstractPackageTestCase
 {
-    protected function getPackageProviders($app)
+    protected function getServiceProviderClass(): string
     {
-        return [
-            LaravelDataServiceProvider::class,
-            ServiceProvider::class,
-        ];
+        return \PreemStudio\ArbitraryAttributes\ServiceProvider::class;
     }
 }
