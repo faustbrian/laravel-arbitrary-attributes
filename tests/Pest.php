@@ -26,9 +26,9 @@ uses(
 )->beforeEach(function (): void {
     $this->app['config']->set('database.default', 'testbench');
     $this->app['config']->set('database.connections.testbench', [
-        'driver'   => 'sqlite',
+        'driver' => 'sqlite',
         'database' => ':memory:',
-        'prefix'   => '',
+        'prefix' => '',
     ]);
 
     Schema::dropIfExists('users');
@@ -75,7 +75,7 @@ expect()->extend('toBeOne', function () {
 |
 */
 
-function something()
+function something(): void
 {
     // ..
 }

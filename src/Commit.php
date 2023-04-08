@@ -16,7 +16,7 @@ final class Commit
 
     public static function set(string $key, mixed $value): static
     {
-        return new static('set', $key, $value);
+        return new self('set', $key, $value);
     }
 
     public static function forget(string $key): static

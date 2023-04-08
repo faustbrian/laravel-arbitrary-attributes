@@ -66,10 +66,10 @@ final class ArbitraryAttributes
         foreach ($this->commits as $commit) {
             if ($commit->action() === 'set') {
                 $rows[] = [
-                    'model_id'   => $this->model->id,
+                    'model_id' => $this->model->id,
                     'model_type' => $this->model::class,
-                    'key'        => $commit->key(),
-                    'value'      => $commit->value(),
+                    'key' => $commit->key(),
+                    'value' => $commit->value(),
                 ];
             }
 
@@ -78,7 +78,7 @@ final class ArbitraryAttributes
             }
         }
 
-        if (count($rows) > 0) {
+        if (\count($rows) > 0) {
             ArbitraryAttribute::upsert($rows, ['model_id', 'model_type', 'key']);
         }
 

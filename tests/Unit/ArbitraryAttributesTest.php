@@ -7,7 +7,7 @@ namespace Tests\Unit;
 use Tests\Fixtures\User;
 
 beforeEach(function (): void {
-    $this->user       = User::create([]);
+    $this->user = User::create([]);
     $this->attributes = $this->user->getArbitraryAttributes();
 });
 

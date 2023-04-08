@@ -10,7 +10,7 @@ it('should belong to a model', function (): void {
     $user = User::create([]);
 
     $attribute = $user->arbitraryAttributes()->create([
-        'key'   => 'hello',
+        'key' => 'hello',
         'value' => 'world',
     ]);
 
