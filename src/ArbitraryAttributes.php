@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace BombenProdukt\ArbitraryAttributes;
 
+use BombenProdukt\ArbitraryAttributes\Models\ArbitraryAttribute;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
-use BombenProdukt\ArbitraryAttributes\Models\ArbitraryAttribute;
 
 final class ArbitraryAttributes
 {

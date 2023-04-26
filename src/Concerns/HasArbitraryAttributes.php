@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace BombenProdukt\ArbitraryAttributes\Concerns;
 
-use Illuminate\Database\Eloquent\Relations\MorphMany;
 use BombenProdukt\ArbitraryAttributes\ArbitraryAttributes;
 use BombenProdukt\ArbitraryAttributes\Models\ArbitraryAttribute;
+use Illuminate\Database\Eloquent\Relations\MorphMany;
 
 trait HasArbitraryAttributes
 {
