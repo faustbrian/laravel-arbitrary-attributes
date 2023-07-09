@@ -14,7 +14,7 @@
             "role": "Developer"
         }
     ],
-    "homepage": "https://github.com/BombenProdukt/laravel-arbitrary-attributes",
+    "homepage": "https://github.com/faustbrian/laravel-arbitrary-attributes",
     "require": {
         "php": "^8.2",
         "illuminate/contracts": "^10.0",
