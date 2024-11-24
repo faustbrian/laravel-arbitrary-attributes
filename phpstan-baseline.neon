@@ -1,0 +1,26 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Access to an undefined property Illuminate\\\\Database\\\\Eloquent\\\\Model\\:\\:\\$arbitraryAttributes\\.$#"
+			count: 1
+			path: src/ArbitraryAttributes.php
+
+		-
+			message: "#^Access to an undefined property Illuminate\\\\Database\\\\Eloquent\\\\Model\\:\\:\\$id\\.$#"
+			count: 1
+			path: src/ArbitraryAttributes.php
+
+		-
+			message: "#^Call to an undefined method Illuminate\\\\Database\\\\Eloquent\\\\Model\\:\\:arbitraryAttributes\\(\\)\\.$#"
+			count: 1
+			path: src/ArbitraryAttributes.php
+
+		-
+			message: "#^Property BombenProdukt\\\\ArbitraryAttributes\\\\ArbitraryAttributes\\:\\:\\$collection with generic class Illuminate\\\\Support\\\\Collection does not specify its types\\: TKey, TValue$#"
+			count: 1
+			path: src/ArbitraryAttributes.php
+
+		-
+			message: "#^Method BombenProdukt\\\\ArbitraryAttributes\\\\Models\\\\ArbitraryAttribute\\:\\:model\\(\\) return type with generic class Illuminate\\\\Database\\\\Eloquent\\\\Relations\\\\MorphTo does not specify its types\\: TRelatedModel, TChildModel$#"
+			count: 1
+			path: src/Models/ArbitraryAttribute.php
